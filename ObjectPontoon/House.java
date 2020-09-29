@@ -7,7 +7,7 @@ public class House {
     Card card1 = new Card(); // create 2 cards for house
     Card card2 = new Card();
 
-    public int houseCards() { // reroll houses cards if lower than 18
+    public int houseCards() { // reroll houses cards if lower than 16
 
         int house = 0;
         house = Card.calcTotal(card1.getCard(), card2.getCard());

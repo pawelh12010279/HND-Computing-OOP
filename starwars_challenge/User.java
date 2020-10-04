@@ -8,7 +8,7 @@ package starwars_challenge;
  * @since 30/09/2020
  */
 
-public class Input {
+public class User {
 
     /**
      * Instance variables
@@ -21,7 +21,7 @@ public class Input {
     /**
      * Constructor for the Class Input
      */
-    public Input() {
+    public User() {
 
     }
 

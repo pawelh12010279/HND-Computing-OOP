@@ -12,7 +12,7 @@ public class Run {
     
     public static void main(String[] args) {
         
-        NameGenerator generate = new NameGenerator();
+        Questions generate = new Questions();
         generate.askUser();
 
     }

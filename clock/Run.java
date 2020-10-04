@@ -15,7 +15,7 @@ public class Run {
         /**
          * Create new instance of the class Clock
          */
-        Clock clock = new Clock(12, 15, 34);
+        Clock clock = new Clock(23, 59, 57);
 
         System.out.println("Clock will now tick for 5 seconds");
 

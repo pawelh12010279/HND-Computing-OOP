@@ -1,7 +1,6 @@
 package starwars_challenge;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  * Star Wars name generaror
@@ -13,100 +12,48 @@ import java.util.Scanner;
 
 public class NameGenerator {
 
-    public static Scanner kboard = new Scanner(System.in);
-
     /**
      * Arraylist which stores characters needed for generating Star Wars name
      */
-    private ArrayList<Character> letters = new ArrayList<>();
+    private ArrayList<Character> characters = new ArrayList<>();
 
     /**
-     * Create object of a class Input containing user inputs  
+     * Getter for the ArrayList letters
+     * @return
      */
-    Input userDetails = new Input();
+    public ArrayList<Character> getList() {
 
-    public void askUser() {
-
-        System.out.println("Welcome to Star Wars Name Generator");
-        System.out.println("");
-
-        /**
-         * Gather user inputs
-         */
-        System.out.println("What is your name ?");
-
-        //userDetails.setName(kboard.next().toLowerCase());
-
-
-        while (!kboard.hasNext()) {
-
-            System.out.println("wrong ");
-            kboard.next();
-
-
-            if (kboard.hasNext()) {
-
-                System.out.println("What is your name ?");
-                userDetails.setName(kboard.next().toLowerCase());
-    
-            }
-           // break;
-
-        }
-
-        
-
-        System.out.println("What is your surname ?");
-        userDetails.setSurname(kboard.next().toLowerCase());
-
-        System.out.println("What is your mother's maiden name ?");
-        userDetails.setMaidenName(kboard.next().toLowerCase());
-
-        System.out.println("What is your place of birth ?");
-        userDetails.setPOB(kboard.next().toLowerCase());
-
-        kboard.close();
-
-        /**
-         * Pass gathered data from user to appriopriate methods and generate Star Wars name
-         */
-        generateStarWarsName(userDetails);
-        generateStarWarsSurname(userDetails);
-
-        /**
-         * Display the name to the user
-         */
-        displayStarWarsName(getString(letters));
+        return characters;
 
     }
 
-    public void generateStarWarsName(Input userDetails) {
+    public void generateStarWarsName(User userDetails) {
 
         for (int i = 0; i < 3; i++) {
 
-            letters.add(userDetails.getSurname().charAt(i));
+            characters.add(userDetails.getSurname().charAt(i));
 
         }
 
         for (int i = 0; i < 2; i++) {
 
-            letters.add(userDetails.getName().charAt(i));
+            characters.add(userDetails.getName().charAt(i));
 
         }
 
     }
 
-    public void generateStarWarsSurname(Input userDetails) {
+    public void generateStarWarsSurname(User userDetails) {
 
         for (int i = 0; i < 2; i++) {
 
-            letters.add(userDetails.getMaidenName().charAt(i));
+            characters.add(userDetails.getMaidenName().charAt(i));
 
         }
 
         for (int i = 0; i < 3; i++) {
 
-            letters.add(userDetails.getPOB().charAt(i));
+            characters.add(userDetails.getPOB().charAt(i));
 
         }
 
@@ -140,4 +87,5 @@ public class NameGenerator {
         }
         return builder.toString();
     }
+
 }

@@ -4,17 +4,24 @@ public class House {
 
     private int houseMin = 16;
 
-    Card card1 = new Card(); // create 2 cards for house
+    /**
+     * Initialize 2 object of the class Card for the house player
+     */
+    Card card1 = new Card(); 
     Card card2 = new Card();
 
-    public int houseCards() { // reroll houses cards if lower than 16
+    /**
+     * Method for rerolling houses cards if lower than 16
+     * @return value higher than 16
+     */
+    public int houseCards() { 
 
         int house = 0;
-        house = Card.calcTotal(card1.getCard(), card2.getCard());
+        house = Check.calcTotal(card1.getCard(), card2.getCard());
 
         while (house < houseMin) {
 
-            house = Card.calcTotal(card1.drawCard(), card2.drawCard());
+            house = Check.calcTotal(card1.drawCard(), card2.drawCard());
 
         }
 
@@ -22,7 +29,10 @@ public class House {
 
     }
 
-    public House() { // constructor
+    /**
+     * Constructor
+     */
+    public House() { 
 
         houseCards();
 

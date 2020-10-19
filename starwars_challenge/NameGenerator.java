@@ -62,7 +62,7 @@ public class NameGenerator {
     public void displayStarWarsName(String fullname) {
 
         /**
-         * Substing method used to splitting fullname into 2 separate strings 
+         * Substing method used to split fullname into 2 separate strings 
          */
         String swName = fullname.substring(0, 1).toUpperCase() + fullname.substring(1, 5);
         String swSurname = fullname.substring(5, 6).toUpperCase() + fullname.substring(6, 10);

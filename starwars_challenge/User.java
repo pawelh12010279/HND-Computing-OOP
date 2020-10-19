@@ -11,7 +11,7 @@ package starwars_challenge;
 public class User {
 
     /**
-     * Instance variables
+     * Class attributes
      */
     private String surname;
     private String name;
@@ -19,21 +19,11 @@ public class User {
     private String POB;
 
     /**
-     * Constructor for the Class Input
-     */
-    public User() {
-
-    }
-
-    /**
      * Setters for the Input class variables
      * 
      * @param name sets the encapsulated instance variable name
      */
     public void setName(String name) {
-
-        // do setterow dodaj mechanizmy kontroli bledow
-        // if statementy ktore sprawdza czy rzeczywiscie dostaja string
 
         this.name = name;
 

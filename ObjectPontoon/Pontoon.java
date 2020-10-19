@@ -11,19 +11,34 @@ public class Pontoon {
         String choice;
         int total;
 
-        House house = new House(); // create an object of a class for house
+        /**
+         * Create an object of a class for house
+         */
+        House house = new House(); 
 
-        Card card1 = new Card(); // new player get 2 cards
+        /**
+         * New player get 2 cards
+         */
+        Card card1 = new Card(); 
         Card card2 = new Card();
 
+        /**
+         * Show total for first 2 cards drawn
+         */
         total = Card.calcTotal(card1.getCard(), card2.getCard());
 
         System.out.println("You have drawn " + card1.getCard() + " and " + card2.getCard());
         System.out.println("Current hand: " + total);
 
+        /**
+         * Ask for user input
+         */
         System.out.println("Do you wish to draw another card? y/n");
         choice = kboard.next();
 
+        /**
+         * Verify user input
+         */
         while (choice.equalsIgnoreCase("y")) {
 
             Card card3 = new Card();

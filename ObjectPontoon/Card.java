@@ -1,28 +1,49 @@
 package ObjectPontoon;
 
-public class Card {
+public class Card extends Check {
 
+    /**
+     * Class attributes
+     */
     private int cardValue;
 
-    public Card() { // constructor
+    /**
+     * Constructor for the class Card
+     */
+    public Card() {
 
         cardValue = (int) (Math.random() * 10) + 1;
 
     }
 
+    /**
+     * Getter for the instanced variables of the class Card
+     * 
+     * @return randomised card value in 1-10 range
+     */
     public int getCard() { // getter
 
         return cardValue;
 
     }
 
+    /**
+     * Setter for the instance varaibles for the class Card
+     * 
+     * @param newCard
+     */
     public void setCard(int newCard) { // setter
 
         this.cardValue = newCard;
 
     }
 
-    public int drawCard() { // method for card drawing
+    /**
+     * Method for drawing a new card
+     * 
+     * @return
+     */
+    public int drawCard() {
 
         setCard((int) (Math.random() * 10) + 1);
 
@@ -31,41 +52,5 @@ public class Card {
         return newCard;
 
     }
-
-    // static method to calc total of both cards
-    public static int calcTotal(int card1, int card2) {
-
-        return (card1 + card2);
-
-    }
-
-    public static boolean busted(int total) {
-
-        if (total > 21) {
-
-            return true;
-
-        } else {
-
-            return false;
-
-        }
-
-    }
-
-    public static boolean getResult(int total, int house) {
-
-        if (total > house && total <= 21) {
-
-            return true;
-
-        } else {
-
-            return false;
-
-        }
-
-    }
-
 
 } // end class

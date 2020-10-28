@@ -25,7 +25,7 @@ public class Pontoon {
         /**
          * Show total for first 2 cards drawn
          */
-        total = Card.calcTotal(card1.getCard(), card2.getCard());
+        total = Check.calcTotal(card1.getCard(), card2.getCard());
 
         System.out.println("You have drawn " + card1.getCard() + " and " + card2.getCard());
         System.out.println("Current hand: " + total);
@@ -43,7 +43,7 @@ public class Pontoon {
 
             Card card3 = new Card();
             System.out.println("Card drawn = " + card3.getCard());
-            total = Card.calcTotal(total, card3.getCard());
+            total = Check.calcTotal(total, card3.getCard());
             System.out.println("Current hand: " + total);
 
             if (Card.busted(total) == true) {
@@ -58,9 +58,11 @@ public class Pontoon {
 
             }
 
+            kboard.close();
+
         } // end while
 
-        if (Card.getResult(total, house.houseCards()) == true) {
+        if (Check.getResult(total, house.houseCards()) == true) {
 
             System.out.println("You have won with a total of " + total + ", house scored " + house.houseCards());
             // displayCards(cardsDrawn);

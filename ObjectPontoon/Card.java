@@ -41,7 +41,7 @@ public class Card extends Check {
     /**
      * Method for drawing a new card
      * 
-     * @return
+     * @return newly drawn card
      */
     public int drawCard() {
 

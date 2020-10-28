@@ -3,7 +3,7 @@ package ObjectPontoon;
 public class Check {
 
     /**
-     * static method to calc total of both cards
+     * Static method to calc total of both cards
      */
     public static int calcTotal(int card1, int card2) {
 

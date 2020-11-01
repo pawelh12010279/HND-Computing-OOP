@@ -1,4 +1,4 @@
-package ObjectPontoon;
+package ObjectPontoonJFX.src;
 
 import java.util.Scanner;
 

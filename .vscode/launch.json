@@ -1,0 +1,127 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Run",
+            "request": "launch",
+            "vmArgs": "--module-path D:/Programs/javafx-sdk-15.0.1/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "ObjectPontoonJFX.src.Run",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Run<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "ObjectPontoon.Run",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Run<HND-Computing-OOP_a898be7>(1)",
+            "request": "launch",
+            "mainClass": "SinkDotCom.Run",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Run<HND-Computing-OOP_a898be7>(2)",
+            "request": "launch",
+            "mainClass": "clock.Run",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GameLauncher<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "guessing_game.GameLauncher",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Run<HND-Computing-OOP_a898be7>(3)",
+            "request": "launch",
+            "mainClass": "starwars_challenge.Run",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tutorial1<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_tutorials.tutorial1",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tutorial1b<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_tutorials.tutorial1b",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tutorial1c<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_tutorials.tutorial1c",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tutorial1d<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_tutorials.tutorial1d",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-tutorial1e<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_tutorials.tutorial1e",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-worksheets<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week1_worksheets.worksheets",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClockDisplay<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week3_tutorials.ClockDisplay",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-clock<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week3_tutorials.clock",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MediaLibrary<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week4_medialibrary.MediaLibrary",
+            "projectName": "HND-Computing-OOP_a898be7"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-polymorphismDriver<HND-Computing-OOP_a898be7>",
+            "request": "launch",
+            "mainClass": "week6_polimorphism.polymorphismDriver",
+            "projectName": "HND-Computing-OOP_a898be7"
+        }
+    ]
+}

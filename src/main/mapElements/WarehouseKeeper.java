@@ -1,4 +1,4 @@
-package mapElements;
+package main.mapElements;
 
 /**
  * Class for WarehouseKeeper object
@@ -15,11 +15,11 @@ public class WarehouseKeeper extends MapElement {
      */
     public WarehouseKeeper() {
 
-        String filepath = "resources/SokobanImages/WarehouseKeeper.png";
+        String filepath = "main/resources/SokobanImages/WarehouseKeeper.png";
 
         createElement(filepath); //call inherited method from abstract class MapElement
         setImpassable(true);
-        replaceElement = new Tile(); //places new tile after warehouse keeper moves to the new position
+        replaceElement = new Floor(); //places new tile after warehouse keeper moves to the new position
 
     }
 

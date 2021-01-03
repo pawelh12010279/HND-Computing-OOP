@@ -1,4 +1,4 @@
-package mapElements;
+package main.mapElements;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -40,10 +40,4 @@ public abstract class MapElement extends ImageView {
 
     }
 
-    @Override
-    public String toString() {
-        return "MapElement{" +
-                "impassable=" + impassable +
-                '}';
-    }
 }

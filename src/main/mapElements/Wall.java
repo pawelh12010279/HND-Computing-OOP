@@ -1,4 +1,4 @@
-package mapElements;
+package main.mapElements;
 
 /**
  * Class for Wall objects
@@ -10,10 +10,11 @@ public class Wall extends MapElement {
      */
     public Wall() {
 
-        String filepath = "resources/SokobanImages/Wall.png";
+        String filepath = "main/resources/SokobanImages/Wall.png";
 
         createElement(filepath); //call inherited methods from abstract class MapElement
         setImpassable(true);
 
     }
+
 }

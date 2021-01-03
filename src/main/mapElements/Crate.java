@@ -1,4 +1,4 @@
-package mapElements;
+package main.mapElements;
 
 /**
  * Class for Crate objects
@@ -15,21 +15,11 @@ public class Crate extends MapElement {
      */
     public Crate() {
 
-        String filepath = "resources/SokobanImages/Crate.png";
+        String filepath = "main/resources/SokobanImages/Crate.png";
 
         createElement(filepath); //call inherited method from abstract class MapElement
         setImpassable(true);
-        replaceElement = new Tile(); //places new tile after crate is being put to the new position
-
-    }
-
-    public Crate(String inPlace) {
-
-        String filepath = "resources/SokobanImages/Crate.png";
-
-        createElement(filepath); //call inherited method from abstract class MapElement
-        setImpassable(true);
-        replaceElement = new Tile(); //places new tile after crate is being put to the new position
+        replaceElement = new Floor(); //places new tile after crate is being put to the new position
 
     }
 

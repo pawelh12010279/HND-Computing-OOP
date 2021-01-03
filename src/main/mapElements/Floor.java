@@ -1,19 +1,20 @@
-package mapElements;
+package main.mapElements;
 
 /**
- * Class for Diamond objects
+ * Class for Tile objects
  */
-public class Diamond extends MapElement {
+public class Floor extends MapElement {
 
     /**
      * Constructor for class Tile
      */
-    public Diamond() {
+    public Floor() {
 
-        String filepath = "resources/SokobanImages/Diamond.png";
+        String filepath = "main/resources/SokobanImages/Floor.png";
 
         createElement(filepath); //call inherited methods from abstract class MapElement
         setImpassable(false);
 
     }
+
 }
